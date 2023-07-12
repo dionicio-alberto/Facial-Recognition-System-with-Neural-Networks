@@ -11,6 +11,7 @@ import face_detector
 
 
 if __name__ == '__main__':
+    
     face_cascades = face_detector.import_cascades(CURRENT_DIR)
 
     files = DATA_DIR.joinpath('Sample Faces').glob('*.jpg')
