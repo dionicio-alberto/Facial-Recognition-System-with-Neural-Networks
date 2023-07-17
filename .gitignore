@@ -5,12 +5,7 @@
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
 
-Data/Raw/train.csv
-
-Data/Preprocess/taxi.csv
-
-Data/Process/taxi_sc.csv
-Data/Process/taxi_sc_prescaling.csv
+*.h5
 
 
 .ipynb_checkpoints
