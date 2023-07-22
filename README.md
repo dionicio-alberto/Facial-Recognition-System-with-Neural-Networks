@@ -1,12 +1,12 @@
 <h1 align="center"> LSTM </h1> <br>
 <p align="center">
   <!--<a href="https://gitpoint.co/"> -->
-    <img alt="Init" title="Presentation" src="https://miro.medium.com/v2/resize:fit:504/1*FPTmBD8GY9ZvkdsUBYXC9Q.png" width="450">
+    <img alt="Init" title="Presentation" src="https://i.imgur.com/jBfTlan.png" width="450">
   </a>
 </p>
 
 <p align="center">
-  Sentiment Analysis of Movie Reviews Using LSTM
+  Facial recognition system using neural networks
 </p>
 
 <!-- 
@@ -43,18 +43,30 @@
 
 ## Introduction
 
-Nutural lenguage processing is a subfield in artificial intelligence that is concerned with the interaction of computers and human lenguages.
+Facial recognition systems have become ubiquitous in our every lives. When the iPhone X was first unveiledin 2017, Apple boasted that their new state-of-the-art face ID system was able to instantaneously recognize and authenticate users with just a single glance. Today, almost all smartphones have a facial recognition security system.
 
-With the proliferation of deep learning and neural networks in the image classification domian, scientists began to wonder whether the powers of neural networks could be applied to NLP.
+A face recognition problem can be broken down into the following smaller subproblems:
 
-Sentiment analysis is also an area of NLP that benefited from the resurgence of deep learning. Sentiment analysis is defined as the prediction of the positivity of a text. Most sentiment analysis problems are classification problems (positive/neutral/negative) and not regression problems.
+- **Face detection**: Detect and isolate faces in the image. In an image with multiple face, we need to detect each of them separately. 
+- **Face recognition**: For each detected face in the image, we run it through a neural network to classify the subject.
 
-In this repository we've created a Long Short-Term Memory neural network for Sentiment Analysis of movies reviews from IMDb 
+### Face detection
+
+Face detecion can be implemented by the OpenCV library in Python. OpenCV is an open source computer vision librery for computer vision task.
+
+## Face recognition
+
+Intuitively, humans recognize faces by comparing their key features. For example, humans use features such as the shape of eyes, the thickness of the eyebrows, the sizse of the nose, the overall shape of the face, and so on to recognize a person. This ability comes naturally to us, and we are seldom affected by varations in angles and lighting. For facial recognition, researchers have found that when convolutional layers are applied to human faces, they extract spatial features, such as eyes and noses. 
+
+This insight forms the core of our algorithm for one-shot learning:
+
+- Use convolutional layers to extract identifying features from faces. 
+- Using the euclidan distance, measure the difference of the two lower-dimension vectors output from the convolutional layers. The Euclidian distance is inversely proportional to the simalirity between the two images
 
 **All project is in the folder *Notebook*.**
 
 <p align="center">
-  <img src = "https://www.panoramaaudiovisual.com/wp-content/uploads/2019/06/IMDB.jpg", width="600">
+  <img src = "https://i.imgur.com/ZwhaYns.png", width="600">
 </p>
 
 -----
@@ -63,20 +75,14 @@ In this repository we've created a Long Short-Term Memory neural network for Sen
 
 Principal's model feactures:
 
-- LSTM Nerual Network
-- IMDb sentimental analysis
-- Word Embeding layer
-- LSTM layer with 256 units
-- Dense layer with sigmoid function activation
-- 3 optimizers proved:
-  1. SGD
-  2. RMSprop
-  3. Adam
-- ~90% acuracuty
+- Siamese Neural Network
+- Database of Faces created by AT&T Laboratories, Cambridge.
+- CNN and Euclidan distance.
+
 
 
 <p align="center">
-  <img src = "https://i.imgur.com/UUmoqh3.png" width=400>
+  <img src = "https://i.imgur.com/Px8pWP9.png" width=400>
 </p>
 
 > Model schematic
@@ -106,6 +112,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
   - Seaborn
   - Keras
   - TensorFlow
+  - CV2
 - Data Analysis and Exploration
 - Data Preprocessing
 - Modeling Neural Network
