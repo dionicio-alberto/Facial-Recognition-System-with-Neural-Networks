@@ -1,4 +1,4 @@
-<h1 align="center"> LSTM </h1> <br>
+<h1 align="center"> Facial recognition system using neural networks </h1> <br>
 <p align="center">
   <!--<a href="https://gitpoint.co/"> -->
     <img alt="Init" title="Presentation" src="https://i.imgur.com/jBfTlan.png" width="450">
@@ -129,7 +129,8 @@ Please take a look at the [contributing guidelines](./CONTRIBUTING.md) for a det
 
 The models with RMSprop has the best accuracy.
 
-![results](https://i.imgur.com/9T1AHXP.png)
+![results](https://i.imgur.com/rKt5CMo.png)
+![results](https://i.imgur.com/0EsCv7q.png)
 
 <!--  ## Backers [![Backers on Open Collective](https://opencollective.com/git-point/backers/badge.svg)](#backers)
 
